@@ -1,8 +1,6 @@
 import TeamMember from './TeamMember'
 
-import ownerImg_1 from '../../assets/images/owner.jpg'
-import drImg_2 from '../../assets/images/dr.belal.jpg'
-import drImg_3 from '../../assets/images/dr.abdus-subhan.jpg'
+import doctorInfo from '../../doctorInfo.json'
 function Team() {
   return (
     <section id="team" class="mt-4">
@@ -13,19 +11,19 @@ function Team() {
 
       <div class="row text-light team-content my-4 d-flex justify-content-center align-items-center">
       <TeamMember 
-        imgSrc={ownerImg_1}
-        name="Md. Ziaur Rahman"
-        position="Maneging Director(Paramadical)"
+        imgSrc={doctorInfo[0].imgSrc}
+        name={doctorInfo[0].name}
+        position={doctorInfo[0].position}
       />
       <TeamMember 
-        imgSrc={drImg_2}
-        name="S Belal Hossain"
-        position="Medical officer-MBBS, MCPS(sugery), FCPS(surgery)"
+        imgSrc={doctorInfo[1].imgSrc}
+        name={doctorInfo[1].name}
+        position={doctorInfo[1].position}
       />
       <TeamMember 
-        imgSrc={drImg_3}
-        name="Dr Abdus Subhan"
-        position="Medical officer-MBBS"
+        imgSrc={doctorInfo[2].imgSrc}
+        name={doctorInfo[2].name}
+        position={doctorInfo[2].position}
       />
       </div>
 

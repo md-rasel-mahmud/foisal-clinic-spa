@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 
 function TeamMember(props) {
   return (
@@ -16,9 +16,9 @@ function TeamMember(props) {
                 <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
 
-            <button className="secondary-btn mb-2 text-light btn-info">
+            <Link to="/Appointment" className="secondary-btn mb-2 text-light btn-info">
                 <i class="fa-solid fa-file"></i> Appointment
-            </button>
+            </Link>
         </div>
     </>
   );

@@ -80,6 +80,7 @@
     color: #6a6a6a;
 }
 
+
 /* Naver Area  */
 .nav-link{
     color: var(--font-color);
@@ -289,6 +290,7 @@
     transform: scale(0);
 }
 
+
 .full-screen{
     display: flex;
     flex-direction: column;
@@ -302,7 +304,7 @@
     backdrop-filter: blur(10px);
     bottom: 0;
     left: 0;
-    z-index: 10;
+    z-index: 2000;
 }
 @keyframes fadein {
     from{

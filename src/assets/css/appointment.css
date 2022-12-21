@@ -8,12 +8,12 @@
 }
 .left-sidebar{
     width: 100%;
-    height: 87vh;
+    min-height: 87vh;
 
 }
 .right-sidebar{
     width: 100%;
-    height: 87vh;
+    min-height: 87vh;
     background-color: var(--bs-gray-200);
 }
 .avater{
