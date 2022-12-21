@@ -2,10 +2,13 @@ import { useState } from "react";
 import DoctorForApmnt from "./DoctorForApmnt";
 
 import doctorInfo from '../../doctorInfo.json'
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 function Appointment() {
+  // for data submit to redirect
+  const navigate = useNavigate()
+
   // default value at state from json data 
   const [selectDr, setSelectDr] = useState({
     name: 'Select the doctor from Appointment section',
@@ -35,8 +38,8 @@ function Appointment() {
   const handleSubmit = (e) =>{
     
     e.preventDefault();
-    <Link to="/Submit"></Link>
-    e.target.value('')
+    
+    navigate('/Submit');
   }
   return (
     <div className="appointment ">
@@ -56,8 +59,7 @@ function Appointment() {
             <div className="col-lg-9 col-sm-12">
                 <div className="right-sidebar">
                     <div className="login-form d-flex justify-content-start w-100 flex-column align-items-start">
-                        <form onSubmit={handleSubmit} className="d-flex flex-column gap-2  rounded px-4 justify-content-center">
-                  
+                        <form onSubmit={handleSubmit} className="d-flex flex-column gap-2 rounded px-4 justify-content-center">
                           <h2 className="pb-2 text-primary border-bottom my-1">Doctor Appointment!</h2>
                   
                           <div className="row gap-2">

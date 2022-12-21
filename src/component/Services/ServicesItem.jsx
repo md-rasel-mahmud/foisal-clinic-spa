@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 function ServicesItem(props) {
@@ -10,9 +11,9 @@ function ServicesItem(props) {
               <h3 class="text-center mt-2">{props.ServisesName}</h3>
               <p class="text-center">{props.ServicesDetail}</p>
   
-              <button className="btn my-3 text-light btn-info">
+              <Link to="/Appointment" className="btn my-3 text-light btn-info">
                   <i class="fa-solid fa-file"></i> Appointment
-              </button>
+              </Link>
           </div>
       </>
     );
