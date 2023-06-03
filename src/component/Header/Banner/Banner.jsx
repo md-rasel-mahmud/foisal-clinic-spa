@@ -1,134 +1,72 @@
-import sliderImg_1 from '../../../assets/images/slider-1.png';
-import sliderImg_2 from '../../../assets/images/banner-bg.jpg';
-import sliderImg_3 from '../../../assets/images/bg1.jpg';
-import sliderImg_4 from '../../../assets/images/bg2.jpg';
-
-
+import sliderImg_1 from "../../../assets/images/slider-1.png";
+import sliderImg_2 from "../../../assets/images/banner-bg.jpg";
+import sliderImg_3 from "../../../assets/images/bg1.jpg";
+import sliderImg_4 from "../../../assets/images/bg2.jpg";
+import { Carousel } from "react-bootstrap";
 
 function Banner() {
-    return (
-      <section id="home">
-        <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
-          <div className="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div className="carousel-inner">
-            <div className="carousel-item active" data-bs-interval="5000">
+  return (
+    <Carousel>
+      <Carousel.Item>
+        <img className="d-block w-100" src={sliderImg_1} alt="First slide" />
+        <Carousel.Caption className="d-flex w-25 text-start h-100 flex-column align-items-start justify-content-center">
+          <h3>Faisal Clinic - Your Comprehensive Family Healthcare Center</h3>
+          <p>
+            Faisal Clinic is a comprehensive family healthcare center committed
+            to providing high-quality medical services for individuals of all
+            ages. From routine check-ups to specialized treatments, our
+            dedicated team of medical professionals is here to cater to the
+            unique healthcare needs of you and your loved ones.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="d-block w-100" src={sliderImg_2} alt="Second slide" />
 
-              {/* slider image-1  */}
-              <img src={sliderImg_1} className="d-block w-100" alt="..."/>
+        <Carousel.Caption className="d-flex w-25 text-start h-100 flex-column align-items-start justify-content-center">
+          <h3>Advanced Technology and Expertise for Accurate Diagnoses</h3>
+          <p>
+            At Faisal Clinic, we leverage advanced medical technology and the
+            expertise of our experienced physicians to ensure accurate
+            diagnoses. Our state-of-the-art diagnostic equipment enables us to
+            detect and treat a wide range of conditions promptly. Rest assured,
+            our team is fully equipped to provide you with the most effective
+            and precise treatment plans.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="d-block w-100" src={sliderImg_3} alt="Third slide" />
 
-              <div className="carousel-caption d-none d-md-block">
-                <div className="row">
-                  <div className="col-lg-6 col-md-12">
-                    <div className="banner-content d-flex justify-content-center align-items-start flex-column">
-                        <h1>We have Best Medicare
-                          plan options for you</h1>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-                        <a href="#">read more</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="carousel-item" data-bs-interval="3000">
+        <Carousel.Caption className="d-flex w-25 text-start h-100 flex-column align-items-start justify-content-center">
+          <h3>Personalized Care Tailored to Your Well-being</h3>
+          <p>
+            We understand that every patient is unique, with individual
+            healthcare requirements and preferences. That's why we prioritize
+            personalized care at Faisal Clinic. Our compassionate team takes the
+            time to understand your concerns, answer your questions, and develop
+            customized treatment plans that prioritize your overall well-being.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="d-block w-100" src={sliderImg_4} alt="Third slide" />
 
-              {/* slider image-2  */}
-              <img src={sliderImg_2} className="d-block w-100" alt="Banner-1"/>
+        <Carousel.Caption className="d-flex w-25 text-start h-100 flex-column align-items-start justify-content-center">
+          <h3>Convenient and Accessible Healthcare Services</h3>
+          <p>
+            Convenience and accessibility are essential aspects of healthcare.
+            Faisal Clinic is conveniently located and offers flexible
+            appointment scheduling to accommodate your busy lifestyle. Our
+            commitment to minimizing waiting times ensures that you receive
+            prompt attention and care. Trust us to provide you and your family
+            with convenient and accessible healthcare services when you need
+            them the most.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+  );
+}
 
-              <div className="carousel-caption d-none d-md-block">
-                <div className="row">
-                  <div className="col-lg-6 col-md-12">
-                    <div className="banner-content d-flex justify-content-center align-items-start flex-column">
-                        <h1>We have Best Medicare
-                          plan options for you</h1>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-                        <a href="#">read more</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="carousel-item" data-bs-interval="4000">
-
-              {/* slider image-3  */}
-              <img src={sliderImg_3} className="d-block w-100" alt="..."/>
-
-              <div className="carousel-caption d-none d-md-block">
-                <div className="row">
-                  <div className="col-lg-6 col-md-12">
-                    <div className="banner-content d-flex justify-content-center align-items-start flex-column">
-                        <h1>We have Best Medicare plan options for you</h1>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-                        <a href="#">read more</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
-          </button>
-        </div>
-
-        {/* Card  */}
-        
-        <div className="card-group">
-          <div className="container-fluid">
-            <div className="row">
-              <div className="col-lg-3 card-hvr col-md-6 col-sm-12 px-0">
-                <div className="card my-4 align-items-center">
-                  <a className="social-icon" 
-                  href="#"><i className="fa-solid fa-stethoscope"></i></a>
-                  <div className="card-body">
-                    <h5 className="card-title">best treatmenet</h5>
-                    <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quas.</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 card-hvr col-md-6 col-sm-12 px-0">
-                <div className="card my-4 align-items-center">
-                  <a className="social-icon" 
-                  href="#"><i className="fa-solid fa-kit-medical"></i></a>
-                  <div className="card-body">
-                    <h5 className="card-title">Emergency help</h5>
-                    <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quas.</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 card-hvr col-md-6 col-sm-12 px-0">
-                <div className="card my-4 align-items-center">
-                  <a className="social-icon" 
-                  href="#"><i className="fa-solid fa-user-nurse"></i></a>
-                  <div className="card-body">
-                    <h5 className="card-title">medical staff</h5>
-                    <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quas.</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 card-hvr col-md-6 col-sm-12 px-0">
-                <div className="card my-4 align-items-center">
-                  <a className="social-icon" 
-                  href="#"><i className="fas fa-user-md"></i></a>
-                  <div className="card-body">
-                    <h5 className="card-title">qualified doctors</h5>
-                    <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quas.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    );
-  }
-  
-  export default Banner;
+export default Banner;

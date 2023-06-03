@@ -60,9 +60,9 @@ function Footer() {
                 <h3 className="mx-5 text-light mb-2">Enquiry Form</h3>
 
                 <form className="d-flex flex-column align-items-center" action="submit.html">
-                    <input placeholder="Name" type="text"/>
-                    <input placeholder="Phone Number" type="number"/>
-                    <input placeholder="Message" type="text"/>
+                    <input className="text-white" placeholder="Name" type="text"/>
+                    <input className="text-white" placeholder="Phone Number" type="number"/>
+                    <input className="text-white" placeholder="Message" type="text"/>
 
                     <div className="btn-submit">
                     <input type="submit"/>
